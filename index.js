@@ -126,9 +126,12 @@ Use the getFlavorByIndex function below to do the following:
 
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
-
-function getFlavorByIndex(/*your code here*/){
-    /*your code here*/
+const myFlavors=[...originalFlavors];
+function getFlavorByIndex(myFlavors,flav){
+    myFlavors.indexOf(flav);
+    return flav;                         
+  }
+   console.log(myFlavors,[1])
 }
 
 
