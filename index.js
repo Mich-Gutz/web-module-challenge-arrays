@@ -106,10 +106,13 @@ Use the removeLastFlavor function below to do the following:
 
     For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
+const myFlavors=[...originalFlavors]; //Not sure wheteher I need to keep using this line before the function
 
-function removeLastFlavor(/*your code here*/){
-   /*your code here*/
-}
+function removeLastFlavor(myFlavors){
+    myFlavors.pop();
+    return myFlavors;                         
+  }
+   console.log(removeLastFlavor(myFlavors))
 
 
 
