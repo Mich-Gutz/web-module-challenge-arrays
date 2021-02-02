@@ -88,20 +88,13 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(myFlavors){
-   myFlavors.unshift('Rainbow Sherbert')
+const myFlavors=[...originalFlavors];//This line specifies the list I get the info from, according to the prompt, we make a copy of the original list.
+
+function addFlavor(myFlavors,newFlav){ 
+   myFlavors.unshift(newFlav);
+  return myFlavors;                           //a little confused to when I use return or console.log
 }
- console.log(addFlavor(myFlavors))
-
-
-
- 
- const myFlavors=[...originalFlavors];
-
-function addFlavor(myFlavors){
-   myFlavors.unshift(Rainbow Sherbert);
-}
- console.log(myFlavors)
+ console.log(addFlavor(myFlavors, 'Rainbow Sherbert'))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
